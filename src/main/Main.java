@@ -8,7 +8,6 @@ public class Main {
 		try {
 			Scanner sc = new Scanner(System.in);
 			Random rnd = new Random();
-			Boolean mapGenerated = false;
 			boolean play = true;
 
 			System.out.println("Welcome!");
@@ -31,8 +30,6 @@ public class Main {
 						rows[i][j] = "I ";
 					}
 				}
-
-				mapGenerated = true;
 
 				rows[rnd.nextInt(row)][rnd.nextInt(row)] = "l ";
 
@@ -57,7 +54,7 @@ public class Main {
 				} else if (option.equals("no") || option.equals("No")) {
 					play = false;
 				} else {
-					System.out.println("Well... let's play again then... \n\n\n\n\n");
+					System.out.println("What?? let's play again then... \n\n\n\n\n");
 				}
 			}
 
